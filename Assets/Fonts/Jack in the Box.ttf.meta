@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5bff36a0a00db5a4c8ce606c763aba4d
+timeCreated: 1511859069
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Jack in the Box
+  fontNames:
+  - Jack in the Box
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
