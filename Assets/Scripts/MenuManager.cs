@@ -17,6 +17,7 @@ public class MenuManager : MonoBehaviour
 
     void Awake()
     {
+        Time.timeScale = 1;  //Make sure the time is not stopped so the buttons still work properly
         source = GetComponent<AudioSource>();
         source.clip = EnterSound;
         playbutton = GameObject.Find("PlayButton").gameObject.GetComponent<Button>();
