@@ -48,18 +48,21 @@ public class PauseManager : MonoBehaviour {
         
 	}
 
+    //Enable or Disable Pause
     public void ResumeGame()
     {
         source.Play();
         isActive = !isActive;
     }
 
+    //Get back to the main menu
     public void MainMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(mainMenuScene);
     }
 
+    //Exit Game
     public void QuitGame()
     {
         Application.Quit();
