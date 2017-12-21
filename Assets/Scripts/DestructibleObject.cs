@@ -6,7 +6,7 @@ public class DestructibleObject : MonoBehaviour {
     
     [SerializeField]
     private int pv;
-
+    
     public DestructibleObject()
     {
         pv = 0;
@@ -17,11 +17,12 @@ public class DestructibleObject : MonoBehaviour {
         this.pv = pv;
     }
 
-    private 
+    // ------------ Getter & Setter methods
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public int Pv
+    {
+        get { return pv; }
+        set { pv = value; }
+    }
 	
 }
