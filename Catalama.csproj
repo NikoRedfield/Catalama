@@ -227,6 +227,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
     <Compile Include="Assets\Scripts\DestructibleObject.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\PauseManager.cs" />
   </ItemGroup>

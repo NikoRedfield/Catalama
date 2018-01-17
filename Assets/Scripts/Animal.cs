@@ -45,6 +45,11 @@ public class Animal : DestructibleObject {
             // The objective is necessarily a DestructibleObject
             Hit(collision.gameObject.GetComponent<DestructibleObject>());
         }
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            //Player is tmp consider a DestructibleObject
+            Hit(collision.gameObject.GetComponent<DestructibleObject>());
+        }
     }
 
     // ------------ Getter & Setter methods
