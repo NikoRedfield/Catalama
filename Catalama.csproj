@@ -226,10 +226,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\DebugCommands.cs" />
     <Compile Include="Assets\Scripts\DestructibleObject.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\MenuManager.cs" />
-    <Compile Include="Assets\Scripts\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyCount.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Manager\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\StartWave.cs" />
+    <Compile Include="Assets\Scripts\Waves\Wave.cs" />
+    <Compile Include="Assets\Scripts\Waves\WaveGenerator.cs" />
+    <Compile Include="Assets\Scripts\Waves\WaveNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Extern\Standard Assets\Fonts\OpenSans\License!.txt" />
