@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : DestructibleObject {
+public class Animal : DestructibleObject
+{
 
     [SerializeField]
     private int dmg;
@@ -30,17 +31,24 @@ public class Animal : DestructibleObject {
         if (target.Pv > 0)
         {
             target.Pv -= Dmg;
-            Debug.Log("PV restants : " + target.Pv);
-        } else if(target.Pv <= 0)
+        }
+        else if (target.Pv <= 0)
         {
-            // Game over
+            if (target.gameObject.tag.Equals("Enemy"))
+            {
+                target.gameObject.SetActive(false);
+            }
+            else
+            {
+                // Game over
+            }
 
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag.Equals("Objective"))
+        if (collision.gameObject.tag.Equals("Objective"))
         {
             // The objective is necessarily a DestructibleObject
             Hit(collision.gameObject.GetComponent<DestructibleObject>());
@@ -49,6 +57,11 @@ public class Animal : DestructibleObject {
         {
             //Player is tmp consider a DestructibleObject
             Hit(collision.gameObject.GetComponent<DestructibleObject>());
+        }
+        if (gameObject.tag.Equals("Player") && collision.gameObject.tag.Equals("Enemy") && Input.GetMouseButton(0))
+        {
+            Hit(collision.gameObject.GetComponent<DestructibleObject>());
+            Debug.Log("-50 pv!");
         }
     }
 
