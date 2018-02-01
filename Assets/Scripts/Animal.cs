@@ -30,11 +30,20 @@ public class Animal : DestructibleObject
     {
         if (target.Pv > 0)
         {
+            // Enemies are destroyed when damaging the objective
+            if (target.gameObject.tag.Equals("Objective"))
+            {
+                gameObject.SetActive(false);
+            }
             target.Pv -= Dmg;
         }
         else if (target.Pv <= 0)
         {
             if (target.gameObject.tag.Equals("Enemy"))
+            {
+                target.gameObject.SetActive(false);
+            }
+            else if (target.gameObject.tag.Equals("Objective"))
             {
                 target.gameObject.SetActive(false);
             }
