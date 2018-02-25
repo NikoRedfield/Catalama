@@ -230,6 +230,7 @@
     <Compile Include="Assets\Scripts\DestructibleObject.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyCount.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Lama.cs" />
     <Compile Include="Assets\Scripts\Manager\MenuManager.cs" />
     <Compile Include="Assets\Scripts\Manager\PauseManager.cs" />
     <Compile Include="Assets\Scripts\SpwanObject.cs" />
