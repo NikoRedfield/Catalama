@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterSound: {fileID: 8300000, guid: c0713fe49a3f13e4e90fe87057185bb1, type: 3}
-  LevelToLoad: TestLevel
+  LevelToLoad: Intro
 --- !u!1 &435337495
 GameObject:
   m_ObjectHideFlags: 0
