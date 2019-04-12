@@ -336,6 +336,8 @@
     <Compile Include="Assets\Scripts\Manager\PauseManager.cs" />
     <Compile Include="Assets\Scripts\SpwanObject.cs" />
     <Compile Include="Assets\Scripts\StartWave.cs" />
+    <Compile Include="Assets\Scripts\UI\BlinkingText.cs" />
+    <Compile Include="Assets\Scripts\UI\MenuTransition.cs" />
     <Compile Include="Assets\Scripts\Waves\Wave.cs" />
     <Compile Include="Assets\Scripts\Waves\WaveGenerator.cs" />
     <Compile Include="Assets\Scripts\Waves\WaveNumber.cs" />

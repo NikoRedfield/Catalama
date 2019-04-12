@@ -10,17 +10,17 @@ public class MenuManager : MonoBehaviour
 
     public AudioClip EnterSound;
     public string LevelToLoad = "Level01";
+    public Button playbutton;
 
     private AudioSource source;
-    private Button playbutton;
-
+    
 
     void Awake()
     {
         Time.timeScale = 1;  //Make sure the time is not stopped so the buttons still work properly
         source = GetComponent<AudioSource>();
         source.clip = EnterSound;
-        playbutton = GameObject.Find("PlayButton").gameObject.GetComponent<Button>();
+        
     }
 
 
